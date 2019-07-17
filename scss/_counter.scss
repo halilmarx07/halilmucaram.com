@@ -1,0 +1,78 @@
+/* Counter CSS */
+
+.count-text {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        content: '';
+        background-color: $border;
+        z-index: 1;
+        top: 0;
+        right: -14.5px;
+    }
+
+    .rs-counter {
+        position: relative;
+        z-index: 1;
+        font-size: 42px;
+        color: $secondary;
+        font-weight: 500;
+        line-height: 1;
+        display: inline-block;
+        margin-bottom: 15px;
+
+        @media #{$breakpoint-md} {
+            font-size: 36px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 26px;
+        }
+    }
+
+    h5 {
+        font-size: 13px;
+        margin-bottom: 0;
+        color: $heading;
+        letter-spacing: 1px;
+        width: 100%;
+        background-color: $white;
+        text-transform: uppercase;
+        font-weight: 400;
+        
+        @media #{$breakpoint-xs} {
+            font-size: 12px;
+        }
+    }
+}
+
+.about-us-content {
+    position: relative;
+    z-index: 1;
+
+    .row {
+        .col-6 {
+            &:last-child {
+                .count-text {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                @media #{$breakpoint-xs} {
+                    .count-text {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

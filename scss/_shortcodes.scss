@@ -1,0 +1,121 @@
+/* Shortcodes CSS */
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.dornee-btn {
+    display: inline-block;
+    min-width: 150px;
+    height: 52px;
+    color: $white;
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 53px;
+    background-color: $primary;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    @media #{$breakpoint-xs} {
+        min-width: 130px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $secondary;
+        color: $white;
+        font-weight: 500;
+    }
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $secondary;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.about-us-area {
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    position: relative;
+    z-index: 9;
+    border: 3px solid #ebebeb;
+    display: block;
+    padding: 5px 20px;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto 70px;
+
+    @media #{$breakpoint-xs} {
+        width: auto;
+    }
+
+    h6 {
+        position: absolute;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: $secondary;
+        opacity: 0.075;
+        width: 100%;
+        letter-spacing: 3px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -5;
+
+        @media #{$breakpoint-xs} {
+            font-size: 1.4rem;
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        color: $secondary;
+
+        @media #{$breakpoint-xs} {
+            font-size: 1.4rem;
+        }
+    }
+
+    &.white {
+        h2 {
+            color: $white;
+        }
+    }
+}

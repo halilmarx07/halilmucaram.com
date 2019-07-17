@@ -1,0 +1,29 @@
+/* Skill CSS */
+
+.skill-box {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+
+    .skill-title {
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}
+
+.skill-desc-area {
+    h4 {
+        margin-bottom: 30px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

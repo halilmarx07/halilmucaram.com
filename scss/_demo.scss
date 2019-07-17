@@ -1,0 +1,94 @@
+/* Demo CSS */
+
+.single-demo {
+    position: relative;
+    z-index: 1;
+
+    a {
+        display: block;
+        position: relative;
+        z-index: 1;
+        background-color: $primary;
+        border-radius: 4px;
+        @include box-shadow(0 10px 55px 5px rgba(137, 173, 255, 0.1));
+
+        img {
+            width: 100%;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .page-title {
+            @include transition-duration(500ms);
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $heading;
+            font-weight: 700;
+        }
+
+        .demo-overlay {
+            @include transition-duration(500ms);
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: calc(100% - 50px);
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 4px 4px 0 0;
+            @include display-flex(flex);
+            @include align-items-center;
+            @include justify-content-center;
+            opacity: 0;
+            visibility: hidden;
+
+            i {
+                display: block;
+                width: 50px;
+                height: 50px;
+                border: 2px solid $primary;
+                background-color: $primary;
+                text-align: center;
+                line-height: 46px;
+                border-radius: 50%;
+                font-size: 26px;
+                color: $white;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            .page-title {
+                color: $white;
+            }
+
+            .demo-overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.single-feature {
+    position: relative;
+    z-index: 1;
+
+    img {
+        max-height: 40px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    span {
+        font-size: 12px;
+        text-transform: capitalize;
+        display: block;
+        text-align: center;
+        font-weight: 700;
+    }
+}

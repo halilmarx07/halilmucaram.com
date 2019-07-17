@@ -1,0 +1,271 @@
+/* Hero CSS */
+
+.welcome-area {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    height: 970px;
+
+    .welcome-bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    @media #{$breakpoint-lg} {
+        height: 820px;
+    }
+
+    @media #{$breakpoint-md} {
+        height: 700px;
+    }
+
+    @media #{$breakpoint-xs} {
+        height: 500px;
+    }
+
+    @media #{$breakpoint-sm} {
+        height: 600px;
+    }
+
+    .welcome-content {
+        position: relative;
+        z-index: 1;
+
+        h5 {
+            color: $white;
+            display: block;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        h2 {
+            position: relative;
+            z-index: 1;
+            color: $white;
+            font-size: 72px;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+            display: inline-block;
+            line-height: 1;
+
+            @media #{$breakpoint-lg} {
+                font-size: 56px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 48px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 28px;
+            }
+
+            @media #{$breakpoint-sm} {
+                font-size: 36px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100px;
+                height: 3px;
+                background-color: $white;
+                top: 50%;
+                right: -130px;
+                z-index: 1;
+
+                @media #{$breakpoint-xs} {
+                    width: 50px;
+                    right: -60px;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100px;
+                height: 3px;
+                background-color: $white;
+                top: 50%;
+                left: -130px;
+                z-index: 1;
+
+                @media #{$breakpoint-xs} {
+                    width: 50px;
+                    left: -60px;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: $white;
+            margin-bottom: 0;
+            line-height: 2;
+
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-sm} {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .down-icon {
+        position: absolute;
+        bottom: 100px;
+        text-align: center;
+        left: 50%;
+        width: 50px;
+        margin-left: -25px;
+        z-index: 10;
+        font-size: 42px;
+        @include animation(downIcon ease-in-out 3s infinite);
+
+        a {
+            color: $white;
+        }
+
+        @media #{$breakpoint-xs} {
+            bottom: 0;
+        }
+    }
+
+    &.animated-headline {
+        .welcome-content {
+            h2 {
+
+                &::after {
+                    display: none;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes downIcon {
+    0% {
+        bottom: 70px;
+        opacity: 1;
+    }
+
+    50% {
+        bottom: 30px;
+        opacity: 0.7;
+    }
+}
+
+@keyframes downIcon {
+    0% {
+        bottom: 70px;
+        opacity: 1;
+    }
+
+    50% {
+        bottom: 30px;
+        opacity: 0.7;
+    }
+}
+
+.welcome-slides {
+    position: relative;
+    z-index: 1;
+
+    .single-slide {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 970px;
+
+        @media #{$breakpoint-lg} {
+            height: 820px;
+        }
+
+        @media #{$breakpoint-md} {
+            height: 700px;
+        }
+
+        @media #{$breakpoint-xs} {
+            height: 500px;
+        }
+
+        @media #{$breakpoint-sm} {
+            height: 600px;
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        @include transition-duration(500ms);
+        position: absolute;
+        width: 80px;
+        height: 140px;
+        top: 50%;
+        left: 0;
+        margin-top: -70px;
+        z-index: 100;
+        background-position: 0 0 !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        border-radius: 0;
+        text-align: center;
+        line-height: 148px;
+        color: $white;
+        font-size: 30px;
+        @include box-shadow(0 10px 55px 5px rgba(137, 173, 255, 0.35));
+        opacity: 0.5;
+
+        @media #{$breakpoint-md} {
+            width: 60px;
+        }
+
+        @media #{$breakpoint-xs} {
+            width: 40px;
+        }
+
+        &::after {
+            @include transition-duration(500ms);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            background-color: $primary;
+            opacity: 0.8;
+            content: '';
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+
+            &::after {
+                opacity: 0.8;
+                visibility: visible;
+            }
+        }
+    }
+
+    .owl-next {
+        left: auto;
+        right: 0;
+
+        @media #{$breakpoint-xs} {
+            right: 0;
+        }
+    }
+}

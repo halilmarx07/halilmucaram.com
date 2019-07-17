@@ -1,0 +1,63 @@
+/* Service Area */
+
+.service-content-area {
+    padding: 50px 30px;
+    position: relative;
+    z-index: 1;
+    @include transition-duration(500ms);
+    border-radius: 0;
+    background-color: $white;
+
+    @media #{$breakpoint-xs} {
+        padding: 30px 15px;
+    }
+
+    .service-icon {
+        @include transition-duration(500ms);
+        position: relative;
+        z-index: 2;
+        font-size: 52px;
+        margin-bottom: 5px;
+        display: block;
+        color: $secondary;
+    }
+
+    .service-content-text {
+        h4 {
+            margin-bottom: 20px;
+            @include transition-duration(500ms);
+
+            @media #{$breakpoint-xs} {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            @include transition-duration(500ms);
+
+            @media #{$breakpoint-lg} {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &:hover,
+    &:focus {
+        @include transform(translateY(-10px));
+        background-color: $secondary;
+        @include box-shadow(0 10px 55px 5px rgba(137, 173, 255, .35));
+
+        .service-icon {
+            color: $primary;
+        }
+
+        .service-content-text {
+
+            h4,
+            p {
+                color: $primary;
+            }
+        }
+    }
+}

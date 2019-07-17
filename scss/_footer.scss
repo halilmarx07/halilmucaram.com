@@ -1,0 +1,44 @@
+/* Footer CSS */
+
+.footer-bottom-area {
+    position: relative;
+    z-index: 1;
+    background-color: $dark;
+
+    .footer-social-icon {
+        a {
+            display: inline-block;
+            margin: 0 15px;
+            color: $white;
+            line-height: 1;
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+    }
+
+    .footer--content-text p {
+        color: $white;
+        margin-bottom: 0;
+        margin-top: 30px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 14px;
+        }
+
+        a {
+            color: $white;
+
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+            }
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+    }
+}

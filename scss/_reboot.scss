@@ -1,0 +1,445 @@
+/* Reboot CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: $fonts;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: $fonts;
+    color: $heading;
+}
+
+p {
+    color: $text;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 16px;
+
+    @media #{$breakpoint-xs} {
+        font-size: 14px;
+    }
+}
+
+a,
+a:hover,
+a:focus {
+    font-family: $fonts;
+    @include transition-duration(500ms);
+    text-decoration: none;
+    outline: 0 solid transparent;
+    font-weight: 400;
+    box-shadow: none;
+    color: $heading;
+}
+
+ul,
+ol {
+    margin: 0;
+
+    li {
+        list-style: none;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            list-style: none;
+            text-decoration: none;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----- Spacing ----- */
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-70 {
+    margin-top: 70px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mt-150 {
+    margin-top: 150px !important;
+}
+
+.mt-200 {
+    margin-top: 200px !important;
+}
+
+.mt-250 {
+    margin-top: 250px !important;
+}
+
+.mt-300 {
+    margin-top: 300px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.mb-70 {
+    margin-bottom: 70px !important;
+}
+
+.mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.mb-150 {
+    margin-bottom: 150px !important;
+}
+
+.mb-200 {
+    margin-bottom: 200px !important;
+}
+
+.mb-250 {
+    margin-bottom: 250px !important;
+}
+
+.mb-300 {
+    margin-bottom: 300px !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.ml-15 {
+    margin-left: 15px !important;
+}
+
+.ml-30 {
+    margin-left: 30px !important;
+}
+
+.ml-50 {
+    margin-left: 50px !important;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.mr-15 {
+    margin-right: 15px !important;
+}
+
+.mr-30 {
+    margin-right: 30px !important;
+}
+
+.mr-50 {
+    margin-right: 50px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.mb-80 {
+    margin-bottom: 80px !important;
+}
+
+/* ----- Height ----- */
+
+.height-400 {
+    height: 400px !important;
+}
+
+.height-500 {
+    height: 500px !important;
+}
+
+.height-600 {
+    height: 600px !important;
+}
+
+.height-700 {
+    height: 700px !important;
+}
+
+.height-800 {
+    height: 800px !important;
+}
+
+/* Section Padding */
+
+.section-padding-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-padding-100-50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-padding-100-200 {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.section-padding-200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section-padding-50-0 {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.section-padding-50-0 {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section-padding-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-padding-80-50 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.section-padding-80-0 {
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-80 {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+#scrollUp {
+    bottom: 30px;
+    font-size: 24px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    color: $white;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    @include transition-duration(500ms);
+    border-radius: 0;
+    background-color: $primary;
+
+    &:hover,
+    &:focus {
+        background-color: $dark;
+    }
+
+    @media #{$breakpoint-xs} {
+        bottom: 0;
+        right: 30px;
+    }
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+
+    > .jarallax-img {
+        position: absolute;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-dialog {
+    max-width: 50%;
+    margin: 85px auto;
+
+    @media #{$breakpoint-lg} {
+        max-width: 800px;
+    }
+
+    @media #{$breakpoint-md} {
+        max-width: 700px;
+    }
+
+    @media #{$breakpoint-xs} {
+        max-width: 300px;
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        max-width: 470px;
+    }
+
+    @media #{$breakpoint-sm} {
+        max-width: 560px;
+    }
+
+    .modal-body {
+        padding: 2rem;
+        @include box-shadow(0 10px 55px 5px rgba(137, 173, 255, .35));
+
+        button.close {
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            border: 2px solid $border;
+            border-radius: 50%;
+            line-height: 26px !important;
+            z-index: 100;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+.modal-open .modal {
+    background-color: $white;
+}
+
+.modal-backdrop.show {
+    display: none !important;
+}
+
+input:required,
+textarea:required {
+    box-shadow: none !important;
+}
+
+input:invalid,
+textarea:invalid {
+    box-shadow: none !important;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+    display: none;
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+    margin-left: 280px;
+
+    @media #{$breakpoint-lg} {
+        margin-left: 0;
+    }
+
+    @media #{$breakpoint-md} {
+        margin-left: 0;
+    }
+
+    @media #{$breakpoint-xs} {
+        margin-left: 0;
+    }
+}
+
+.progress-container {
+    position: fixed;
+    z-index: 898989898989;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    top: 0;
+
+    @media #{$breakpoint-lg} {
+        top: 70px;
+    }
+
+    @media #{$breakpoint-md} {
+        top: 70px;
+    }
+
+    @media #{$breakpoint-xs} {
+        top: 70px;
+    }
+
+    .progress-bar {
+        height: 3px;
+        background: $primary;
+        width: 0%;
+    }
+}

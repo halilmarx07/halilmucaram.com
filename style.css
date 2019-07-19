@@ -1382,8 +1382,12 @@ button:focus {
 @media (max-width: 320px){
 	
 	
-	
-	
+		
 	
 }
 
+
+.github-icon {
+	font-size: 150px;
+	color:grey;
+}

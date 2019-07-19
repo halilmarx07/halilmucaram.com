@@ -53,6 +53,11 @@ ul li {
 	line-height: 1.59;
 }
 
+i {
+  text-decoration: none;
+	color: rgb(22, 185, 22); 
+}
+
 a { 
 	text-decoration: none;
 	color: #2f2f2f;  

@@ -197,6 +197,10 @@ button:focus {
 	text-align: center;
 }
 
+.tableH {
+	background-color: whitesmoke;
+}
+
 /* ========= BUTTON =========*/
 
 .mu-primary-btn {

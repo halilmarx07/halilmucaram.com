@@ -649,7 +649,7 @@ textarea:invalid {
         padding: 0;
         border-bottom: none; }
         .header-area .nav-brand img {
-          max-width: 100px; } }
+          max-width: 50px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-area .nav-brand {
         position: relative;
@@ -658,7 +658,7 @@ textarea:invalid {
         padding: 0;
         border-bottom: none; }
         .header-area .nav-brand img {
-          max-width: 100px; } }
+          max-width: 50px; } }
     @media only screen and (max-width: 767px) {
       .header-area .nav-brand {
         position: relative;
@@ -667,7 +667,7 @@ textarea:invalid {
         padding: 0;
         border-bottom: none; }
         .header-area .nav-brand img {
-          max-width: 100px; } }
+          max-width: 50px; } }
   .header-area .contact-me-btn {
     position: absolute;
     z-index: 1000;

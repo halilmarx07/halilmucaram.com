@@ -1091,6 +1091,17 @@ button:focus {
 	transition: all 0.5s;
 }
 
+.github-icon {
+	font-size: 150px;
+	color:grey;
+}
+
+.container2 {
+	height: 100%;
+	margin: 0%;
+	padding-bottom: 0;
+}
+
 
 
 /*--------------------*/
@@ -1387,7 +1398,3 @@ button:focus {
 }
 
 
-.github-icon {
-	font-size: 150px;
-	color:grey;
-}

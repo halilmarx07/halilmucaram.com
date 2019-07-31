@@ -1113,6 +1113,16 @@ button:focus {
 	padding-bottom: 0;
 }
 
+/*--------------------*/
+/* NATIVE BLACK & WHITE UI */
+/*--------------------*/
+
+@media (prefers-color-scheme : dark){
+	Body {
+		color: white;
+		background-color: black;
+	}
+}
 
 
 /*--------------------*/

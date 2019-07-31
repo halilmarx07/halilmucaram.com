@@ -1118,9 +1118,26 @@ button:focus {
 /*--------------------*/
 
 @media (prefers-color-scheme : dark){
-	Body {
-		color: white;
-		background-color: black;
+	.mu-testimonial-slide 
+	.slick-dots li button:hover, 
+	.mu-testimonial-slide 
+	.slick-dots li button:focus, 
+	.mu-testimonial-slide 
+	.slick-dots li
+	.slick-active button, 
+	.mu-resume-btn:hover, 
+	.mu-resume-btn:focus, 
+	.mu-header-dot, 
+	.mu-filter-item-content, 
+	.mu-contact-top-single 
+	.mu-icon, .mu-skill-progress-bar 
+	.mu-pro-bar, 
+	#mu-featured-slider, 
+	#mu-header.mu-fixed-nav {
+		background-color: #111011;
+	}
+	body {
+		color: #111011
 	}
 }
 

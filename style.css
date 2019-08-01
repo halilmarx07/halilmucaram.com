@@ -1134,10 +1134,10 @@ button:focus {
 	.mu-pro-bar, 
 	#mu-featured-slider, 
 	#mu-header.mu-fixed-nav {
-		background-color: #111011;
+		background-color:rgb(33, 33, 34);
 	}
 	body {
-		color: #111011
+		color: rgb(33, 33, 34);
 	}
 }
 

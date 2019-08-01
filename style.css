@@ -1136,9 +1136,13 @@ button:focus {
 	#mu-header.mu-fixed-nav {
 		background-color:rgb(33, 33, 34);
 	}
+
 	body {
-		color: rgb(33, 33, 34);
+		color: rgb(27, 27, 29);
 	}
+
+	.tableH {
+		background-color: rgb(179, 184, 184);
 }
 
 

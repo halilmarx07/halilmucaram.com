@@ -1,2 +1,0 @@
-# halilmucaram.com
-My Website
